@@ -1,5 +1,5 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+    /*font-family: 'Montserrat', sans-serif;*/
     padding: 0;
 
 }
@@ -15,13 +15,46 @@ header {
     margin: 0;
 }
 
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.menu li {
+    float: left;
+    display: inline;
+    margin-top: 30px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    color: black;
+    padding: 0 7px;
+    font-weight: normal;
+    font-size: 15px;
+    text-decoration: none;
+}
 
 .caja {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     width: 100%;
     padding: 0;
 }
+
+.caja ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
 
 .logo {
     width: 60px;
@@ -29,39 +62,29 @@ header {
     padding: 0;
 }
 
-nav {
-    right: 0;
+.caja2 {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    padding-right: 10px;
+
+}
+
+.caja2 ul {
+    display: flex;
+    padding: 0;
+
+}
+
+
+.caja2 ul li div {
+    display: flex;
+    flex-direction: row;
 }
 
 .carrito {
     width: 20px;
-    margin-right: 5px;
-    position: relative;
-}
 
-ul {
-    list-style-type: none;
-    text-align: center;
-}
-
-nav li {
-    float: left;
-    display: inline;
-    margin-top: 30px;
-}
-
-
-nav a {
-    text-transform: uppercase;
-    color: black;
-    padding: 0 7px;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 15px;
-}
-
-nav a:hover {
-    text-decoration: underline
 }
 
 .contenedor {
@@ -69,6 +92,11 @@ nav a:hover {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
     margin-top: 0px;
+}
+
+.contenedor :hover {
+    border-color: #c78c19;
+    transform: scale(1.03);
 }
 
 .marca {
@@ -80,6 +108,7 @@ nav a:hover {
 .titulo-principal {
     text-align: center;
     margin: 0;
+    font-size: 1.5em;
 
 }
 
@@ -219,6 +248,10 @@ nav a:hover {
 
 }
 
+.carro {
+    font-size: 1.5em;
+}
+
 .carrito-compras img {
     width: 150px;
     height: 150px;
@@ -262,4 +295,131 @@ nav a:hover {
     background-color: #F4ECF7;
 
 
+}
+
+.contenido {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.formato {
+    width: 100%;
+    max-width: 450px;
+    background-color: #F4ECF7;
+    padding: 20px 50px 60px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.formato h1 {
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: #000000;
+    position: relative;
+}
+
+.formato h1::after {
+    content: '';
+    width: 30px;
+    height: 4px;
+    border-radius: 3px;
+    background: #04bd7d;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.campos {
+    background-color: #ffffff;
+    margin: 15px 0;
+    border-radius: 3%;
+    display: flex;
+    align-items: center;
+    transition: max-height 0.5s;
+    overflow: hidden;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: none;
+    padding: 18px 15px;
+    color: #000000;
+}
+
+input::placeholder {
+    color: #000000
+}
+
+.campos i {
+    margin-left: 15px;
+    color: #04bd7d;
+}
+
+form p {
+    color: #000000;
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    color: #04bd7d;
+    margin-left: 5px;
+}
+
+.botones {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botones button {
+    flex-basis: 48%;
+    font-size: 16px;
+    background-color: #04bd7d;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
+}
+
+.grupos-inputs {
+    height: 400px;
+}
+
+
+.botones button.desactivar {
+    background-color: #eaeaea;
+    color: #2c2f35;
+}
+
+.not-display {
+    display: none;
+}
+
+.enviar {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.saveButton {
+    width: 100%;
+    background-color: #04bd7d;
+    color: #ffffff;
+    height: 40px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    transition: background 1s;
 }

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <div class="caja">
+                <img class="logo" src="imagenes/logoSM.jpg"></h1>
+                <ul>
+
+                    <li><a href="index.html"> Inicio</a></li>
+                    <li><a href="nuevo.html"> Nuevo</a> </li>
+                    <li><a href="mujer.html"> Mujer </a></li>
+                    <li><a href="hombre.html"> Hombre</a></li>
+
+                </ul>
+            </div>
+            <div class="caja2">
+                <ul>
+                    <li><a href="regitro.html">Registrate /Iniciar </a> </li>
+
+                    <li>
+                        <div>
+                            <a href="carro-compras.html">Mi carrito </a>
+                            <img class="carrito" src="imagenes/carro.jpg">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <div class="contenido">
+            <div class="formato">
+                <h1 id="title">Registro</h1>
+                <form>
+
+                    <div class="grupos-inputs">
+                        <div class="botones">
+                            <button id="registro" type="button">Registro</button>
+                            <button id="iniciar_sesion" type="button" class="desactivar">Login</button>
+                        </div>
+                        <div class="campos" id="nombreInput">
+                            <i class="fa-solid fa-user"></i>
+                            <input id="nombre" type="text" placeholder="Nombre">
+                        </div>
+                        <div class="campos" id="telefonoInput">
+                            <i class="fa-solid fa-phone"></i>
+                            <input id="telefono" type="phone" placeholder="Telefono">
+                        </div>
+                        <div class="campos">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input id="correo" type="email" placeholder="Correo">
+                        </div>
+                        <div class="campos">
+                            <i class="fa-solid fa-lock"></i>
+                            <input id="contraseña" type="password" placeholder="Contraseña">
+                        </div>
+                        <div class="campos" id="direccionInput">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <input id="direccion" type="location" placeholder="Direccion">
+                        </div>
+
+                        <div class="enviar">
+                            <button id="enviarId" class="saveButton" type="button">Enviar</button>
+                            <p class="not-display" id="olviContrasena">Olvidaste tu contraseña <a href="#">click
+                                    aqui</a></p>
+                        </div>
+                    </div>
+
+
+                </form>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </main>
+    <section class="General">
+
+        <div class="contenido-pagina">
+            <img class="imagen" src="imagenes/logoSM.jpg">
+
+            <div class="informacion">
+                <div>
+                    <h3 class="titulo">Tienda</h3>
+                    <ul>
+                        <li class="items">Nuevo</li>
+                        <li class="items">Mujer</li>
+                        <li class="items">Hombre</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="titulo">Nosotros</h3>
+                    <ul>
+                        <li class="items">Acerca de </li>
+                        <li class="items">Suscribete</li>
+                        <li class="items">Contactos</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="titulo">Terminos y condiciones</h3>
+                    <ul class="lista-termino&condiciones">
+                        <li class="items">Politicas de la tienda</li>
+                        <li class="items">Envio y devoluciones</li>
+                        <li class="items">Metodos de pago</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-footer">
+        <p>Tienda SM - 2024</p>
+    </footer>
+
+</body>
