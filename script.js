@@ -99,15 +99,22 @@ function loginCliente() {
             console.log("Respusta")
             console.log(respuesta.status)
             if (respuesta.status === 200) {
-                correo.value = "";
-                contraseña.value = "";
+                limpiar()
                 alert("Ingreso exitoso");
                 return
             }
+            if (respuesta.status == 404) {
+                alert("Error en la autenticacion")
+                return
+            }
+
             throw new Error("Error consumiendo el servicio")
         }).catch(error => {
-            alert("error: verifique sus datos")
-            console.log("error catch", error)
+            if (correo.value = "", contraseña.value = "") {
+
+                alert("error: verifique sus datos")
+                console.log("error catch", error)
+            }
         });
 }
 
